@@ -425,11 +425,53 @@ footer {
         margin: 0 auto;
     }
 }
+
 @media (max-width: 768px) {
+    .header {
+        padding: 15px 0;
+    }
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
     .nav-links {
-        display: none;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
     }
     .hero {
-        padding-top: 100px;
+        padding-top: 130px;
+    }
+    .section-title {
+        font-size: 2.2rem;
+    }
+    .products {
+        padding: 80px 24px;
+    }
+    .contact {
+        padding: 80px 0;
+    }
+    .contact-form-wrapper {
+        padding: 24px;
+    }
+    .info-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+    .badge {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 12px;
+    }
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+    .card-body {
+        padding: 20px;
     }
 }
